@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import {
+	BrowserRouter,
+	Navigate,
+	Route,
+	Routes,
+	useLocation,
+} from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import { useEffect } from "react";
+import EntryPage from "./EntryPage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const Scroll = (props) => {
+		const location = useLocation();
+		useEffect(() => {
+			window.scrollTo(0, 0);
+		}, [location]);
+
+		return props.children;
+	};
+	return (
+		<BrowserRouter>
+			<Scroll>
+				<Routes>
+					<Route path="/" element={<Navigate to="/my" />} />
+
+					<Route path="/my" element={<EntryPage />}>
+						<Route path="" element={<Navigate to="home" />} />
+						<Route path="home" element={<Homepage />} />
+					</Route>
+				</Routes>
+			</Scroll>
+		</BrowserRouter>
+	);
 }
 
 export default App;

@@ -1,0 +1,93 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+ 
+}
+@keyframes rotateX {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes moveY {
+  from {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.custom-delay-1 {
+  animation:rotateX 0.1s linear,fadeIn 0.5s ease-in-out 0.1s forwards;
+}
+
+.custom-delay-2 {
+  animation: rotateX 0.2s linear,fadeIn 0.5s ease-in-out 0.2s forwards;
+}
+
+.custom-delay-3 {
+  animation: rotateX 0.3s linear,fadeIn 0.5s ease-in-out 0.3s forwards;
+}
+.custom-delay-4 {
+  animation: rotateX 0.4s linear,fadeIn 0.5s ease-in-out 0.4s forwards;
+}
+.custom-delay-5 {
+  animation: rotateX 0.5s linear,fadeIn 0.5s ease-in-out 0.5s forwards;
+}
+.custom-delay-6 {
+  animation: rotateX 0.6s linear,fadeIn 0.5s ease-in-out 0.6s forwards;
+}
+.custom-delay-7 {
+  animation: rotateX 0.6s linear,fadeIn 0.5s ease-in-out 0.6s forwards;
+}
+.custom-delay-8 {
+  animation: rotateX 0.6s linear,fadeIn 0.5s ease-in-out 0.6s forwards;
+}
+.custom-delay-9 {
+  animation: rotateX 0.6s linear,fadeIn 0.5s ease-in-out 0.6s forwards;
+}
+.custom-delay-10 {
+  animation: rotateX 0.7s linear,fadeIn 0.5s ease-in-out 0.7s forwards;
+}
+.custom-delay-11 {
+  animation: rotateX 0.8s linear,fadeIn 0.5s ease-in-out 0.8s forwards;
+}
+.custom-delay-12 {
+  animation: rotateX 0.9s linear,fadeIn 0.5s ease-in-out 0.9s forwards;
+}
+.custom-delay-13 {
+  animation: rotateX 1s linear,fadeIn 0.5s ease-in-out 1s forwards;
+}
+.custom-delay-14 {
+  animation: rotateX 1.1s linear,fadeIn 0.5s ease-in-out 1.1s forwards;
+}
+.custom-delay-15 {
+  animation: rotateX 1.2s linear,fadeIn 0.5s ease-in-out 1.2s forwards;
+}
+
+.custom-para-delay-1 {
+  animation: moveY 1s ,  ease-out 0.5s ;
+}
+.custom-para-delay-2 {
+  animation: moveY 0.4s   ease-out 1s;
+}
+.custom-para-delay-3 {
+  animation: moveY 0.6s ease-out 1.5s;
+}
+.custom-para-delay-4 {
+  animation: moveY 0.8s ease-out 2s ;
+}
+.custom-para-delay-5 {
+  animation: moveY 1s ease-out 2.5s ;
+}
